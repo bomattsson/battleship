@@ -1,17 +1,15 @@
 require 'grid'
 
-descirbe Grid do
-	it 'can have a Ship'
-end
+describe Grid do
 
-describe size do
-	it 'size is two by two, A to B, 1 to 2'
-end 
+  it 'creates a grid' do
+  subject = Grid.new
+  expect(subject).to be_kind_of Grid
+  end
 
-describe hit do
-	it 'can recivie a hit on a Ship'
-end 
+  it 'creates cells' do
+  subject = Grid.new
+  expect(subject.grid).to be_kind_of Hash
+  end
 
-describe miss do
-	it 'can report a miss'
 end
