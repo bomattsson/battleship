@@ -25,4 +25,11 @@ describe 'Player' do
     subject.shoot_at(:a1)
     expect(subject.my_board.grid).to include :a1 => "miss"
   end
+
+  it 'can shoot at opponent' do
+  	player2 = Player.new
+  	subject.shoot(player2,:a1)
+  	expect(subject.opponents_board.grid).to include :a1 => "miss"
+  end 
+
 end
