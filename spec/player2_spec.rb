@@ -1,7 +1,7 @@
 require 'grid'
-require 'player'
+require 'player2'
 
-describe 'Player' do
+describe 'Player2' do
 
   subject { Player.new }
 
