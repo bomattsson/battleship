@@ -1,4 +1,5 @@
 require 'grid'
+require 'player'
 
 describe Grid do
 
@@ -12,10 +13,6 @@ describe Grid do
   	expect(subject.grid).to include :a1 => "w"
   end
 
-  it 'can place ship' do
-  	subject = Grid.new
-  	subject.place_ship(:a1)
-  	expect(subject.grid).to include :a1 => "s" 
-  end
+
 
 end
