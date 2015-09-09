@@ -1,7 +1,7 @@
 class Grid
   attr_accessor :grid
 
-  def initialize(sqaure)
+  def initialize 
   	@grid = {a1: 'w', a2: 'w', b1: 'w', b2: 'w'}
   end
 
