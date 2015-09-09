@@ -1,17 +1,20 @@
 class Ship
-	attr_accessor :position, :size, :name, :hit
+	attr_accessor :position, :size, :name, :boat :hit,
 
-	def initialize(size, name)
-		#@position = ''
+	def initialize(kind, size)
+		
+		case upcase
+		when "A"
+
+		
 		@size = size	
 		@name = name		 
 		@hit = 0
 	end
 
+
 	def start_position(pos)
 		@position = pos
 	end
 
-	#ubåt=u 
-	#ship = minsvepare = size=3 hits[] 
 end
