@@ -3,6 +3,7 @@ require 'ships'
 describe Ship do
 
 	subject { Ship.new(0, '')}
+	object { Submarine.new }
 
 	it 'creates a ship' do
 		expect(subject).to be_kind_of Ship
@@ -27,5 +28,4 @@ describe Ship do
 	it 'can recevie a hit' do
 		expect(subject.hit).to eq 0
 	end 
-
 end
