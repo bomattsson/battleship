@@ -1,10 +1,10 @@
 class Ship
 	attr_accessor :position, :size, :name, :hit
 
-	def initialize(storlek, namn)
+	def initialize(size, name)
 		#@position = ''
-		@size = storlek
-		@name = namn		 
+		@size = size	
+		@name = name		 
 		@hit = 0
 	end
 
