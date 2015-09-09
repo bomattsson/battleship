@@ -11,6 +11,15 @@ class Player
     @my_board.grid[coord] = "s" if @my_board.grid[coord] == "w"
   end
 
+  #def place_ship(coord)         
+        #if @my_board.grid[coord] == "water"
+            #@my_board.grid[coord] = "ship" 
+            #true
+        #else
+            #false
+        #end
+    #end
+
    # def place_ship2(coord)
     #@my_board.grid[coord] = "s" if @my_board.grid[coord] == "w"
     #@my_board.grid[coord].next = "s" if @my_board.grid[coord].next == "w"
