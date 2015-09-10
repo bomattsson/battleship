@@ -10,26 +10,26 @@ describe 'Player' do
   end
 
   it 'can place ship' do
-    subject.place_ship(:a1)
-    expect(subject.my_board.grid).to include :a1 => "s"
+    subject.place_ship(:A1)
+    expect(subject.my_board.grid[:A1]).to eq "s"
   end
 
   it 'can receive a hit' do
-    subject.place_ship(:a1)
-    subject.shoot_at(:a1)
-    expect(subject.my_board.grid).to include :a1 => "hit"
+    subject.place_ship(:A1)
+    subject.shoot_at(:A1)
+    expect(subject.my_board.grid).to include :A1 => "hit"
   end
 
   it 'can receive a miss' do
-    subject.place_ship(:a2)
-    subject.shoot_at(:a1)
-    expect(subject.my_board.grid).to include :a1 => "miss"
+    subject.place_ship(:A2)
+    subject.shoot_at(:A1)
+    expect(subject.my_board.grid).to include :A1 => "miss"
   end
 
   it 'can shoot at opponent' do
   	player2 = Player.new
-  	subject.shoot(player2,:a1)
-  	expect(subject.opponents_board.grid).to include :a1 => "miss"
+  	subject.shoot(player2,:A1)
+  	expect(subject.opponents_board.grid).to include :A1 => "miss"
   end 
 
 end

@@ -8,7 +8,7 @@ class Player
   end
 
   def place_ship(coord)
-    @my_board.grid[coord] = @kind if @my_board.grid[coord] == "w"
+    @my_board.grid[coord] = "s" if @my_board.grid[coord] == "w"
   end
 
   def name_ship()
@@ -25,7 +25,7 @@ class Player
    # def place_ship2(coord)
     #@my_board.grid[coord] = "s" if @my_board.grid[coord] == "w"
     #@my_board.grid[coord].next = "s" if @my_board.grid[coord].next == "w"
-  #end
+  end
 
   def shoot_at(coord)
     if @my_board.grid[coord] == 's'

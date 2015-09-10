@@ -22,8 +22,8 @@ describe Ship do
 
 
 	it 'can have a start position'do 
-		subject.start_position(:a1)
-		expect(subject.position).to eq :a1
+		subject.start_position(:A1)
+		expect(subject.position).to eq :A1
 	end
 
 	#it 'can receive a hit' do

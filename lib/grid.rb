@@ -12,5 +12,6 @@ class Grid
         grid["#{l}#{n}".to_sym] = "w"
 		  end
     end
+    grid 
   end
 end
