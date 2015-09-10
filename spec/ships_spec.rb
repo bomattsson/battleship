@@ -20,7 +20,7 @@ describe Ship do
 
 	it 'can place a certain ship' do
 		subject.ship(:D)	
-		expect(subject). to eq :D
+		expect(subject).to eq :D
 	end
 
 	#it 'can receive a hit' do
