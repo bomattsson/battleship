@@ -4,8 +4,6 @@ describe Ship do
 
 	subject { Ship.new("A")}
 
-
-
 	it 'creates a ship' do
 		expect(subject).to be_kind_of Ship
 	end 
@@ -15,15 +13,14 @@ describe Ship do
 	#	expect(kind.size).to eq 5
 	#end
 
-	#it 'has a custom name' do
-		#new_ship = Ship.new(2, 'submarine')
-		#expect(new_ship.name).to eq 'submarine'
-	#end
-
-
 	it 'can have a start position'do 
 		subject.start_position(:A1)
 		expect(subject.position).to eq :A1
+	end
+
+	it 'can place a certain ship' do
+		subject.ship(:D)	
+		expect(subject). to eq :D
 	end
 
 	#it 'can receive a hit' do
